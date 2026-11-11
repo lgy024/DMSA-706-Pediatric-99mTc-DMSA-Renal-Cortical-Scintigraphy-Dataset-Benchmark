@@ -1,0 +1,22 @@
+base: base.yaml
+
+model:
+  name: contrastive
+  image_encoder: resnet18
+  text_encoder: gru
+  embed_dim: 256
+  text_embed_dim: 128
+  text_hidden: 256
+  text_layers: 1
+  pretrained_encoder: true
+
+data:
+  image_size: 256
+  augment: true
+
+train:
+  epochs: 30
+  batch_size: 32
+  lr: 1.0e-4
+  patience: 5
+  save_dir: outputs/checkpoints/contrastive

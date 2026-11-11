@@ -1,0 +1,52 @@
+DMSA-706 CODE LICENSE — RESEARCH USE ONLY
+=========================================
+
+Copyright (c) 2026 The DMSA-706 Authors. All rights reserved.
+
+This license applies to the source code, scripts, configuration files and
+documentation in this repository (the "Software"). It does NOT apply to the
+DMSA-706 dataset, which is governed separately by DATA_USE_AGREEMENT.md.
+
+1. PERMITTED USE
+
+   Subject to the conditions below, you may use, reproduce, modify and
+   internally distribute the Software solely for non-commercial academic
+   research and teaching purposes.
+
+2. CONDITIONS
+
+   a. You must retain this license and all copyright notices in the Software
+      and in any substantial portion of it.
+   b. Any publication, preprint, report or derivative work that uses the
+      Software or the DMSA-706 dataset must cite the DMSA-706 dataset paper.
+   c. You may not use the Software or the dataset for clinical diagnosis,
+      treatment decisions, or any use in which a human clinician does not
+      independently verify the output.
+   d. You may not sell, license, sublicense or otherwise commercially exploit
+      the Software or any derivative of it.
+   e. You may not redistribute the Software, in original or modified form,
+      outside your institution without prior written permission from the
+      copyright holders.
+   f. Modified versions must be clearly marked as modified and must not be
+      presented as the official DMSA-706 implementation.
+
+3. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+4. TERMINATION
+
+   Any breach of these terms terminates your rights under this license
+   immediately. Upon termination you must cease all use and destroy all copies
+   of the Software in your possession.
+
+5. CONTACT
+
+   For permissions beyond the scope of this license, contact the corresponding
+   authors listed in README.md.

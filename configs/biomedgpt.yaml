@@ -1,0 +1,20 @@
+base: base.yaml
+
+model:
+  name: biomedgpt
+  # Set this to the BioMedGPT checkpoint available in your environment.
+  pretrained: BioMedGPT/BioMedGPT-7B
+  model_class: AutoModelForVision2Seq
+  lora:
+    enabled: true
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+train:
+  epochs: 3
+  batch_size: 1
+  grad_accum: 16
+  lr: 1.0e-5
+  save_dir: outputs/checkpoints/biomedgpt

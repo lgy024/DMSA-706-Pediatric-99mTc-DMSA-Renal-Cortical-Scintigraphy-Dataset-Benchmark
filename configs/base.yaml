@@ -1,0 +1,49 @@
+# Shared defaults. Model configs override the fields they need.
+seed: 2025
+
+data:
+  root: data
+  records: data/records.jsonl
+  splits: data/splits.json
+  n: 706
+  image_size: 512
+  augment: true
+  balanced: false
+  rgb: false
+
+model:
+  name: qwen25_vl
+  pretrained: Qwen/Qwen2.5-VL-7B-Instruct
+  t2_prompt: "请判断该肾皮质显像图像最符合的诊断类别。"
+  freeze_backbone: true
+  lora:
+    enabled: true
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+train:
+  epochs: 3
+  batch_size: 2
+  grad_accum: 8
+  lr: 2.0e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  bf16: true
+  max_len: 2048
+  save_dir: outputs/checkpoints
+  logging_steps: 10
+  num_workers: 4
+  gradient_checkpointing: true
+  wandb: false
+  device: cuda
+  optimizer: adamw
+  scheduler: cosine
+  patience: 5
+
+eval:
+  batch_size: 1
+  max_new_tokens: 512
+  temperature: 0.0

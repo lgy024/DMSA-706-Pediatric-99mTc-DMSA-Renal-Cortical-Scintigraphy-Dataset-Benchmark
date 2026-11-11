@@ -1,0 +1,15 @@
+base: base.yaml
+
+model:
+  name: vit_transformer
+  d_model: 256
+  nhead: 8
+  num_layers: 2
+  pretrained_vit: true
+
+train:
+  epochs: 20
+  batch_size: 4
+  lr: 1.0e-4
+  max_len: 256
+  save_dir: outputs/checkpoints/vit_transformer

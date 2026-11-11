@@ -1,0 +1,13 @@
+base: base.yaml
+
+model:
+  name: cnn_lstm
+  hidden: 256
+  embed_dim: 128
+
+train:
+  epochs: 20
+  batch_size: 8
+  lr: 1.0e-4
+  max_len: 256
+  save_dir: outputs/checkpoints/cnn_lstm

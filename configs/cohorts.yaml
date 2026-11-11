@@ -1,0 +1,19 @@
+# Cohort settings from Table 2 of the paper.
+# Each setting samples N patients independently, then splits 70 / 10 / 20.
+# The three settings are descriptive; changes across N reflect both training
+# data and test-set composition. Set nested: true for a nested comparison.
+seed: 2025
+nested: false
+cohorts:
+  250:
+    train: 175
+    val: 25
+    test: 50
+  500:
+    train: 350
+    val: 50
+    test: 100
+  706:
+    train: 494
+    val: 70
+    test: 142
